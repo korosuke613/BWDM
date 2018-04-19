@@ -3,6 +3,8 @@ title: BoundaryValueAnalyzer -
 layout: api
 ---
 
+<link rel="stylesheet" type="text/css" href="https://korosuke613.github.io/BWDM/develop/styles.css">
+
 <div class='api-docs-breadcrumbs'><a href="../index.html">bwdm.boundaryValueAnalysisUnit</a> / <a href="./index.html">BoundaryValueAnalyzer</a></div>
 
 # BoundaryValueAnalyzer
