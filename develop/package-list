@@ -1,0 +1,9 @@
+$dokka.format:html
+$dokka.linkExtension:html
+
+bwdm
+bwdm.boundaryValueAnalysisUnit
+bwdm.informationStore
+bwdm.symbolicExecutionUnit
+external
+workspace

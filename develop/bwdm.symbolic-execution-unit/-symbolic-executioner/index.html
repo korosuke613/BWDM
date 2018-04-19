@@ -1,0 +1,91 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>SymbolicExecutioner - </title>
+<link rel="stylesheet" href="../../style.css">
+</HEAD>
+<BODY>
+<a href="../index.html">bwdm.symbolicExecutionUnit</a>&nbsp;/&nbsp;<a href="./index.html">SymbolicExecutioner</a><br/>
+<br/>
+<h1>SymbolicExecutioner</h1>
+<code><span class="keyword">class </span><span class="identifier">SymbolicExecutioner</span></code>
+<h3>Constructors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="-init-.html">&lt;init&gt;</a></p>
+</td>
+<td>
+<code><span class="keyword">internal</span> <span class="identifier">SymbolicExecutioner</span><span class="symbol">(</span><span class="identifier" id="bwdm.symbolicExecutionUnit.SymbolicExecutioner$<init>(bwdm.informationStore.InformationExtractor)/ie">ie</span><span class="symbol">:</span>&nbsp;<a href="../../bwdm.information-store/-information-extractor/index.html"><span class="identifier">InformationExtractor</span></a><span class="symbol">)</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Properties</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="ctx.html">ctx</a></p>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">ctx</span><span class="symbol">: </span><span class="identifier">Context</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="expected-output-data-list.html">expectedOutputDataList</a></p>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">expectedOutputDataList</span><span class="symbol">: </span><a href="http://docs.oracle.com/javase/6/docs/api/java/util/ArrayList.html"><span class="identifier">ArrayList</span></a><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="ie.html">ie</a></p>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">ie</span><span class="symbol">: </span><a href="../../bwdm.information-store/-information-extractor/index.html"><span class="identifier">InformationExtractor</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="input-data-list.html">inputDataList</a></p>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">inputDataList</span><span class="symbol">: </span><a href="http://docs.oracle.com/javase/6/docs/api/java/util/ArrayList.html"><span class="identifier">ArrayList</span></a><span class="symbol">&lt;</span><a href="http://docs.oracle.com/javase/6/docs/api/java/util/HashMap.html"><span class="identifier">HashMap</span></a><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">,</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">&gt;</span><span class="symbol">&gt;</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="do-symbolic-execution.html">doSymbolicExecution</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">doSymbolicExecution</span><span class="symbol">(</span><span class="identifier" id="bwdm.symbolicExecutionUnit.SymbolicExecutioner$doSymbolicExecution(bwdm.informationStore.ConditionAndReturnValueList.ConditionAndReturnValue)/_conditionAndReturnValue">_conditionAndReturnValue</span><span class="symbol">:</span>&nbsp;<a href="../../bwdm.information-store/-condition-and-return-value-list/-condition-and-return-value/index.html"><span class="identifier">ConditionAndReturnValue</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="get-expected-output-data-list.html">getExpectedOutputDataList</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">getExpectedOutputDataList</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="http://docs.oracle.com/javase/6/docs/api/java/util/ArrayList.html"><span class="identifier">ArrayList</span></a><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="make-inequality-expr.html">makeInequalityExpr</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">makeInequalityExpr</span><span class="symbol">(</span><span class="identifier" id="bwdm.symbolicExecutionUnit.SymbolicExecutioner$makeInequalityExpr(kotlin.String, kotlin.String, kotlin.String, kotlin.Boolean)/_left">_left</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">, </span><span class="identifier" id="bwdm.symbolicExecutionUnit.SymbolicExecutioner$makeInequalityExpr(kotlin.String, kotlin.String, kotlin.String, kotlin.Boolean)/_operator">_operator</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">, </span><span class="identifier" id="bwdm.symbolicExecutionUnit.SymbolicExecutioner$makeInequalityExpr(kotlin.String, kotlin.String, kotlin.String, kotlin.Boolean)/_right">_right</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">, </span><span class="identifier" id="bwdm.symbolicExecutionUnit.SymbolicExecutioner$makeInequalityExpr(kotlin.String, kotlin.String, kotlin.String, kotlin.Boolean)/_bool">_bool</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a><span class="symbol">?</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">BoolExpr</span><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="make-mod-expr.html">makeModExpr</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">makeModExpr</span><span class="symbol">(</span><span class="identifier" id="bwdm.symbolicExecutionUnit.SymbolicExecutioner$makeModExpr(kotlin.String, kotlin.String, kotlin.String, kotlin.Boolean)/_left">_left</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">, </span><span class="identifier" id="bwdm.symbolicExecutionUnit.SymbolicExecutioner$makeModExpr(kotlin.String, kotlin.String, kotlin.String, kotlin.Boolean)/_right">_right</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">, </span><span class="identifier" id="bwdm.symbolicExecutionUnit.SymbolicExecutioner$makeModExpr(kotlin.String, kotlin.String, kotlin.String, kotlin.Boolean)/_surplus">_surplus</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">, </span><span class="identifier" id="bwdm.symbolicExecutionUnit.SymbolicExecutioner$makeModExpr(kotlin.String, kotlin.String, kotlin.String, kotlin.Boolean)/_bool">_bool</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a><span class="symbol">?</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">BoolExpr</span></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>
