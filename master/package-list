@@ -1,9 +1,0 @@
-$dokka.format:gfm
-$dokka.linkExtension:md
-
-bwdm
-bwdm.boundaryValueAnalysisUnit
-bwdm.informationStore
-bwdm.symbolicExecutionUnit
-external
-workspace
