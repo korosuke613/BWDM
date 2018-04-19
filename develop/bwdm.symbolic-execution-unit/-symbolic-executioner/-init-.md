@@ -1,9 +1,10 @@
 ---
 title: SymbolicExecutioner.<init> - 
+layout: api
 ---
 
-[bwdm.symbolicExecutionUnit](../index.html) / [SymbolicExecutioner](index.html) / [&lt;init&gt;](./-init-.html)
+<div class='api-docs-breadcrumbs'><a href="../index.html">bwdm.symbolicExecutionUnit</a> / <a href="index.html">SymbolicExecutioner</a> / <a href="./-init-.html">&lt;init&gt;</a></div>
 
 # &lt;init&gt;
 
-`internal SymbolicExecutioner(ie: `[`InformationExtractor`](../../bwdm.information-store/-information-extractor/index.html)`)`
+<div class="signature"><code><span class="keyword">internal</span> <span class="identifier">SymbolicExecutioner</span><span class="symbol">(</span><span class="parameterName" id="bwdm.symbolicExecutionUnit.SymbolicExecutioner$<init>(bwdm.informationStore.InformationExtractor)/ie">ie</span><span class="symbol">:</span>&nbsp;<a href="../../bwdm.information-store/-information-extractor/index.html"><span class="identifier">InformationExtractor</span></a><span class="symbol">)</span></code></div>

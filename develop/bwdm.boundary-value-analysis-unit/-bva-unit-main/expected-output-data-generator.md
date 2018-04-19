@@ -1,9 +1,10 @@
 ---
 title: BvaUnitMain.expectedOutputDataGenerator - 
+layout: api
 ---
 
-[bwdm.boundaryValueAnalysisUnit](../index.html) / [BvaUnitMain](index.html) / [expectedOutputDataGenerator](./expected-output-data-generator.html)
+<div class='api-docs-breadcrumbs'><a href="../index.html">bwdm.boundaryValueAnalysisUnit</a> / <a href="index.html">BvaUnitMain</a> / <a href="./expected-output-data-generator.html">expectedOutputDataGenerator</a></div>
 
 # expectedOutputDataGenerator
 
-`private val expectedOutputDataGenerator: `[`ExpectedOutputDataGenerator`](../-expected-output-data-generator/index.html)
+<div class="signature"><code><span class="keyword">private</span> <span class="keyword">val </span><span class="identifier">expectedOutputDataGenerator</span><span class="symbol">: </span><a href="../-expected-output-data-generator/index.html"><span class="identifier">ExpectedOutputDataGenerator</span></a></code></div>

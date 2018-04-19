@@ -1,36 +1,177 @@
 ---
 title: Node - 
+layout: api
 ---
 
-[bwdm.informationStore](../index.html) / [Node](./index.html)
+<div class='api-docs-breadcrumbs'><a href="../index.html">bwdm.informationStore</a> / <a href="./index.html">Node</a></div>
 
 # Node
 
-`abstract class Node`
+<div class="signature"><code><span class="keyword">abstract</span> <span class="keyword">class </span><span class="identifier">Node</span></code></div>
 
 ### Constructors
 
-| [&lt;init&gt;](-init-.html) | `Node()` |
+<table class="api-docs-table">
+<tbody>
+<tr>
+<td markdown="1">
+
+<a href="-init-.html">&lt;init&gt;</a>
+
+
+</td>
+<td markdown="1">
+<div class="signature"><code><span class="identifier">Node</span><span class="symbol">(</span><span class="symbol">)</span></code></div>
+
+</td>
+</tr>
+</tbody>
+</table>
 
 ### Properties
 
-| [conditionOrReturnStr](condition-or-return-str.html) | `abstract val conditionOrReturnStr: `[`String`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) |
-| [id](id.html) | `var id: `[`Int`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) |
-| [isIfNode](is-if-node.html) | `abstract var isIfNode: `[`Boolean`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) |
-| [isTrueNode](is-true-node.html) | `var isTrueNode: `[`Boolean`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`?` |
-| [nodeLevel](node-level.html) | `var nodeLevel: `[`Int`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) |
-| [parentNode](parent-node.html) | `var parentNode: `[`Node`](./index.md)`?` |
+<table class="api-docs-table">
+<tbody>
+<tr>
+<td markdown="1">
+
+<a href="condition-or-return-str.html">conditionOrReturnStr</a>
+
+
+</td>
+<td markdown="1">
+<div class="signature"><code><span class="keyword">abstract</span> <span class="keyword">val </span><span class="identifier">conditionOrReturnStr</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code></div>
+
+</td>
+</tr>
+<tr>
+<td markdown="1">
+
+<a href="id.html">id</a>
+
+
+</td>
+<td markdown="1">
+<div class="signature"><code><span class="keyword">var </span><span class="identifier">id</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a></code></div>
+
+</td>
+</tr>
+<tr>
+<td markdown="1">
+
+<a href="is-if-node.html">isIfNode</a>
+
+
+</td>
+<td markdown="1">
+<div class="signature"><code><span class="keyword">abstract</span> <span class="keyword">var </span><span class="identifier">isIfNode</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code></div>
+
+</td>
+</tr>
+<tr>
+<td markdown="1">
+
+<a href="is-true-node.html">isTrueNode</a>
+
+
+</td>
+<td markdown="1">
+<div class="signature"><code><span class="keyword">var </span><span class="identifier">isTrueNode</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a><span class="symbol">?</span></code></div>
+
+</td>
+</tr>
+<tr>
+<td markdown="1">
+
+<a href="node-level.html">nodeLevel</a>
+
+
+</td>
+<td markdown="1">
+<div class="signature"><code><span class="keyword">var </span><span class="identifier">nodeLevel</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a></code></div>
+
+</td>
+</tr>
+<tr>
+<td markdown="1">
+
+<a href="parent-node.html">parentNode</a>
+
+
+</td>
+<td markdown="1">
+<div class="signature"><code><span class="keyword">var </span><span class="identifier">parentNode</span><span class="symbol">: </span><a href="./index.md"><span class="identifier">Node</span></a><span class="symbol">?</span></code></div>
+
+</td>
+</tr>
+</tbody>
+</table>
 
 ### Functions
 
-| [getIsIfNode](get-is-if-node.html) | `open fun getIsIfNode(): `[`Boolean`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) |
+<table class="api-docs-table">
+<tbody>
+<tr>
+<td markdown="1">
+
+<a href="get-is-if-node.html">getIsIfNode</a>
+
+
+</td>
+<td markdown="1">
+<div class="signature"><code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">getIsIfNode</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code></div>
+
+</td>
+</tr>
+</tbody>
+</table>
 
 ### Companion Object Properties
 
-| [staticID](static-i-d.html) | `var staticID: `[`Int`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) |
+<table class="api-docs-table">
+<tbody>
+<tr>
+<td markdown="1">
+
+<a href="static-i-d.html">staticID</a>
+
+
+</td>
+<td markdown="1">
+<div class="signature"><code><span class="keyword">var </span><span class="identifier">staticID</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a></code></div>
+
+</td>
+</tr>
+</tbody>
+</table>
 
 ### Inheritors
 
-| [IfNode](../-if-node/index.html) | `class IfNode : `[`Node`](./index.md) |
-| [ReturnNode](../-return-node/index.html) | `class ReturnNode : `[`Node`](./index.md) |
+<table class="api-docs-table">
+<tbody>
+<tr>
+<td markdown="1">
 
+<a href="../-if-node/index.html">IfNode</a>
+
+
+</td>
+<td markdown="1">
+<div class="signature"><code><span class="keyword">class </span><span class="identifier">IfNode</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.md"><span class="identifier">Node</span></a></code></div>
+
+</td>
+</tr>
+<tr>
+<td markdown="1">
+
+<a href="../-return-node/index.html">ReturnNode</a>
+
+
+</td>
+<td markdown="1">
+<div class="signature"><code><span class="keyword">class </span><span class="identifier">ReturnNode</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.md"><span class="identifier">Node</span></a></code></div>
+
+</td>
+</tr>
+</tbody>
+</table>

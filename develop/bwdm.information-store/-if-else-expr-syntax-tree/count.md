@@ -1,9 +1,10 @@
 ---
 title: IfElseExprSyntaxTree.count - 
+layout: api
 ---
 
-[bwdm.informationStore](../index.html) / [IfElseExprSyntaxTree](index.html) / [count](./count.html)
+<div class='api-docs-breadcrumbs'><a href="../index.html">bwdm.informationStore</a> / <a href="index.html">IfElseExprSyntaxTree</a> / <a href="./count.html">count</a></div>
 
 # count
 
-`private var count: `[`Int`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)
+<div class="signature"><code><span class="keyword">private</span> <span class="keyword">var </span><span class="identifier">count</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a></code></div>

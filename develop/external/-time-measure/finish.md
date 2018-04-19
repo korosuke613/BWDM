@@ -1,12 +1,13 @@
 ---
 title: TimeMeasure.finish - 
+layout: api
 ---
 
-[external](../index.html) / [TimeMeasure](index.html) / [finish](./finish.html)
+<div class='api-docs-breadcrumbs'><a href="../index.html">external</a> / <a href="index.html">TimeMeasure</a> / <a href="./finish.html">finish</a></div>
 
 # finish
 
-`open fun finish(): `[`Unit`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html)
+<div class="signature"><code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">finish</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></div>
 
 計測終了時間をセット.
 

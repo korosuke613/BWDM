@@ -1,9 +1,10 @@
 ---
 title: SymbolicExecutioner.ctx - 
+layout: api
 ---
 
-[bwdm.symbolicExecutionUnit](../index.html) / [SymbolicExecutioner](index.html) / [ctx](./ctx.html)
+<div class='api-docs-breadcrumbs'><a href="../index.html">bwdm.symbolicExecutionUnit</a> / <a href="index.html">SymbolicExecutioner</a> / <a href="./ctx.html">ctx</a></div>
 
 # ctx
 
-`private val ctx: Context`
+<div class="signature"><code><span class="keyword">private</span> <span class="keyword">val </span><span class="identifier">ctx</span><span class="symbol">: </span><span class="identifier">Context</span></code></div>

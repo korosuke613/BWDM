@@ -1,9 +1,10 @@
 ---
 title: Util.<init> - 
+layout: api
 ---
 
-[bwdm](../index.html) / [Util](index.html) / [&lt;init&gt;](./-init-.html)
+<div class='api-docs-breadcrumbs'><a href="../index.html">bwdm</a> / <a href="index.html">Util</a> / <a href="./-init-.html">&lt;init&gt;</a></div>
 
 # &lt;init&gt;
 
-`Util()`
+<div class="signature"><code><span class="identifier">Util</span><span class="symbol">(</span><span class="symbol">)</span></code></div>

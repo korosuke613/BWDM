@@ -1,9 +1,10 @@
 ---
 title: InformationExtractor.conditionAndReturnValueList - 
+layout: api
 ---
 
-[bwdm.informationStore](../index.html) / [InformationExtractor](index.html) / [conditionAndReturnValueList](./condition-and-return-value-list.html)
+<div class='api-docs-breadcrumbs'><a href="../index.html">bwdm.informationStore</a> / <a href="index.html">InformationExtractor</a> / <a href="./condition-and-return-value-list.html">conditionAndReturnValueList</a></div>
 
 # conditionAndReturnValueList
 
-`val conditionAndReturnValueList: `[`ConditionAndReturnValueList`](../-condition-and-return-value-list/index.html)
+<div class="signature"><code><span class="keyword">val </span><span class="identifier">conditionAndReturnValueList</span><span class="symbol">: </span><a href="../-condition-and-return-value-list/index.html"><span class="identifier">ConditionAndReturnValueList</span></a></code></div>

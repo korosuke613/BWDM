@@ -1,9 +1,10 @@
 ---
 title: Node.<init> - 
+layout: api
 ---
 
-[bwdm.informationStore](../index.html) / [Node](index.html) / [&lt;init&gt;](./-init-.html)
+<div class='api-docs-breadcrumbs'><a href="../index.html">bwdm.informationStore</a> / <a href="index.html">Node</a> / <a href="./-init-.html">&lt;init&gt;</a></div>
 
 # &lt;init&gt;
 
-`Node()`
+<div class="signature"><code><span class="identifier">Node</span><span class="symbol">(</span><span class="symbol">)</span></code></div>

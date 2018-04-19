@@ -1,9 +1,10 @@
 ---
 title: Hello2018.<init> - 
+layout: api
 ---
 
-[workspace](../index.html) / [Hello2018](index.html) / [&lt;init&gt;](./-init-.html)
+<div class='api-docs-breadcrumbs'><a href="../index.html">workspace</a> / <a href="index.html">Hello2018</a> / <a href="./-init-.html">&lt;init&gt;</a></div>
 
 # &lt;init&gt;
 
-`Hello2018()`
+<div class="signature"><code><span class="identifier">Hello2018</span><span class="symbol">(</span><span class="symbol">)</span></code></div>
