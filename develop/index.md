@@ -4,7 +4,7 @@ layout: api
 ---
 
 ### Packages
-<link rel="stylesheet" type="text/css" href="style.css">
+<link rel="stylesheet" type="text/css" href="styles.css">
 
 <table class="api-docs-table">
 <tbody>
