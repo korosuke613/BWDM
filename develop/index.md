@@ -4,7 +4,7 @@ layout: api
 ---
 
 ### Packages
-<link rel="stylesheet" type="text/css" href="styles.css">
+<link rel="stylesheet" type="text/css" href="https://korosuke613.github.io/BWDM/develop/styles.css">
 
 <table class="api-docs-table">
 <tbody>
