@@ -8,14 +8,14 @@
 
 | Name | Summary |
 |---|---|
-| [&lt;init&gt;](-init-.md) | `BoundaryValueAnalyzer(_information: `[`InformationExtractor`](../../bwdm.information-store/-information-extractor/index.md)`)` |
+| [&lt;init&gt;](-init-.md) | `BoundaryValueAnalyzer(_information: `[`InformationExtractor`](../../bwdm.information-store/-information-extractor/index.md)`, isPairwise: `[`Boolean`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` = true)` |
 
 ### Properties
 
 | Name | Summary |
 |---|---|
-| [boundaryValueList](boundary-value-list.md) | `val boundaryValueList: `[`HashMap`](http://docs.oracle.com/javase/6/docs/api/java/util/HashMap.html)`<`[`String`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`, `[`ArrayList`](http://docs.oracle.com/javase/6/docs/api/java/util/ArrayList.html)`<`[`Long`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`>>` |
-| [inputDataList](input-data-list.md) | `val inputDataList: `[`ArrayList`](http://docs.oracle.com/javase/6/docs/api/java/util/ArrayList.html)`<`[`HashMap`](http://docs.oracle.com/javase/6/docs/api/java/util/HashMap.html)`<`[`String`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`, `[`Long`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`>>` |
+| [boundaryValueList](boundary-value-list.md) | `val boundaryValueList: `[`BoundaryValueList`](../-boundary-value-list.md) |
+| [inputDataList](input-data-list.md) | `val inputDataList: `[`InputDataList`](../-input-data-list.md) |
 
 ### Functions
 
@@ -24,6 +24,7 @@
 | [generateIfConditionalBoundaryValue](generate-if-conditional-boundary-value.md) | `fun generateIfConditionalBoundaryValue(_information: `[`InformationExtractor`](../../bwdm.information-store/-information-extractor/index.md)`): `[`Unit`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) |
 | [generateTypeBoundaryValue](generate-type-boundary-value.md) | `fun generateTypeBoundaryValue(_information: `[`InformationExtractor`](../../bwdm.information-store/-information-extractor/index.md)`): `[`Unit`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) |
 | [makeInputDataList](make-input-data-list.md) | `fun makeInputDataList(_information: `[`InformationExtractor`](../../bwdm.information-store/-information-extractor/index.md)`): `[`Unit`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) |
+| [makeInputDataListWithPairwise](make-input-data-list-with-pairwise.md) | `fun makeInputDataListWithPairwise(_information: `[`InformationExtractor`](../../bwdm.information-store/-information-extractor/index.md)`): `[`Unit`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) |
 
 ### Companion Object Properties
 

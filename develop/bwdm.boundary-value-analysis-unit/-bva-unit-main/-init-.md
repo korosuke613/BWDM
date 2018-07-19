@@ -2,4 +2,4 @@
 
 # &lt;init&gt;
 
-`BvaUnitMain(ie: `[`InformationExtractor`](../../bwdm.information-store/-information-extractor/index.md)`)`
+`BvaUnitMain(ie: `[`InformationExtractor`](../../bwdm.information-store/-information-extractor/index.md)`, isPairwise: `[`Boolean`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)`

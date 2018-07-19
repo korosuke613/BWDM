@@ -3,3 +3,7 @@
 # ifExpressionBody
 
 `private var ifExpressionBody: `[`String`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`?`
+
+a parameter to ArrayList of if-conditions.
+ArrayList of ifConditions of each parameter.
+

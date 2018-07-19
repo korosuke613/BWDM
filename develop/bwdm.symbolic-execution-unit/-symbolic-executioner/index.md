@@ -17,7 +17,7 @@
 | [ctx](ctx.md) | `val ctx: Context` |
 | [expectedOutputDataList](expected-output-data-list.md) | `val expectedOutputDataList: `[`ArrayList`](http://docs.oracle.com/javase/6/docs/api/java/util/ArrayList.html)`<`[`String`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`>` |
 | [ie](ie.md) | `val ie: `[`InformationExtractor`](../../bwdm.information-store/-information-extractor/index.md) |
-| [inputDataList](input-data-list.md) | `val inputDataList: `[`ArrayList`](http://docs.oracle.com/javase/6/docs/api/java/util/ArrayList.html)`<`[`HashMap`](http://docs.oracle.com/javase/6/docs/api/java/util/HashMap.html)`<`[`String`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`, `[`String`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`>>` |
+| [inputDataList](input-data-list.md) | `val inputDataList: `[`ArrayList`](http://docs.oracle.com/javase/6/docs/api/java/util/ArrayList.html)`<`[`InputData`](../-input-data.md)`>` |
 
 ### Functions
 

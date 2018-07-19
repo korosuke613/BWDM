@@ -11,3 +11,4 @@
 | [HelloVDMJ4](-hello-v-d-m-j4/index.md) | `open class HelloVDMJ4` |
 | [HelloZ3](-hello-z3/index.md) | `open class HelloZ3` |
 | [Main](-main/index.md) | `open class Main` |
+| [UsePict](-use-pict/index.md) | `open class UsePict` |
