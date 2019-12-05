@@ -1,0 +1,53 @@
+ファイルパス : /Users/Futa/Library/Mobile Documents/com~apple~CloudDocs/Program/IdeaProjects/BWDM/vdm_files/eval_pairwise.vdmpp
+関数名 : sampleFunction
+引数の型 : a:int b:nat c:nat 
+戻り値の型 : seq of (char)
+生成テストケース数 : 44件(境界値分析:40/記号実行:4)
+
+各引数の境界値
+a : 2147483648 2147483647 -2147483648 -2147483649 99 100 
+b : 4294967295 4294967294 0 -1 2019 2018 
+c : 4294967295 4294967294 0 -1 11 12 
+
+境界値分析によるテストケース（ペアワイズ法適用）
+No.1 : 100 -1 11 -> Undefined Action
+No.2 : 100 2018 12 -> "aは100以上かつcは12以上"
+No.3 : 2147483647 0 4294967295 -> Undefined Action
+No.4 : -2147483649 2018 4294967294 -> Undefined Action
+No.5 : 99 -1 0 -> Undefined Action
+No.6 : 2147483647 4294967294 12 -> "aは100以上かつcは12以上"
+No.7 : -2147483648 4294967294 4294967294 -> "aは100未満かつbは2018より大きい"
+No.8 : 2147483647 4294967295 0 -> Undefined Action
+No.9 : 99 2018 -1 -> Undefined Action
+No.10 : 100 4294967294 4294967295 -> Undefined Action
+No.11 : 100 0 4294967294 -> "aは100以上かつcは12以上"
+No.12 : -2147483649 4294967294 0 -> Undefined Action
+No.13 : -2147483648 2018 11 -> "aは100未満かつbは2018以下"
+No.14 : -2147483648 4294967295 12 -> Undefined Action
+No.15 : -2147483649 2019 12 -> Undefined Action
+No.16 : 2147483648 0 0 -> Undefined Action
+No.17 : -2147483649 4294967295 11 -> Undefined Action
+No.18 : 99 0 12 -> "aは100未満かつbは2018以下"
+No.19 : 99 2019 11 -> "aは100未満かつbは2018より大きい"
+No.20 : 2147483648 4294967294 -1 -> Undefined Action
+No.21 : -2147483649 -1 4294967295 -> Undefined Action
+No.22 : 2147483648 -1 12 -> Undefined Action
+No.23 : 99 4294967294 4294967294 -> "aは100未満かつbは2018より大きい"
+No.24 : 2147483648 2019 4294967294 -> Undefined Action
+No.25 : 2147483648 4294967295 4294967294 -> Undefined Action
+No.26 : -2147483648 0 -1 -> Undefined Action
+No.27 : 2147483648 4294967294 11 -> Undefined Action
+No.28 : 2147483648 2018 4294967295 -> Undefined Action
+No.29 : 2147483647 2019 -1 -> Undefined Action
+No.30 : 2147483647 0 11 -> "aは100以上かつcは12未満"
+No.31 : -2147483648 -1 4294967295 -> Undefined Action
+No.32 : 100 2019 0 -> "aは100以上かつcは12未満"
+No.33 : -2147483648 2018 0 -> "aは100未満かつbは2018以下"
+No.34 : 100 4294967295 -1 -> Undefined Action
+No.35 : -2147483648 2019 4294967295 -> Undefined Action
+No.36 : -2147483649 0 -1 -> Undefined Action
+No.37 : 99 4294967295 4294967295 -> Undefined Action
+No.38 : 2147483647 -1 -1 -> Undefined Action
+No.39 : 2147483647 -1 4294967294 -> Undefined Action
+No.40 : 2147483647 2018 4294967295 -> Undefined Action
+

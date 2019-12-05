@@ -176,7 +176,7 @@ object BwdmMain {
             val bvs: ArrayList<*> = bvsList[currentPrm] as ArrayList<*>
             buf += "$currentPrm : "
             for (bv in bvs) {
-                buf += bv.toString() + " "
+                buf += "$bv "
             }
             buf += "\n"
         }

@@ -1,0 +1,38 @@
+境界値分析によるテストケース（ペアワイズ法適用）
+No.1 : 2147483647 0 0 -> Undefined Action
+No.2 : 2 0 4294967295 -> "aは3未満"
+No.3 : 2147483648 4294967295 99 -> Undefined Action
+No.4 : 2 1 4294967296 -> Undefined Action
+No.5 : 2 4294967294 99 -> "aは3未満"
+No.6 : 2147483647 -1 4294967296 -> Undefined Action
+No.7 : -2147483649 4294967294 4294967296 -> Undefined Action
+No.8 : -2147483648 4294967295 4294967296 -> Undefined Action
+No.9 : -2147483648 1 99 -> "aは3未満"
+No.10 : 3 0 1 -> "aは3以上かつbは1未満"
+No.11 : -2147483648 -1 1 -> Undefined Action
+No.12 : -2147483648 4294967294 4294967295 -> "aは3未満"
+No.13 : -2147483649 1 100 -> Undefined Action
+No.14 : 3 1 4294967296 -> Undefined Action
+No.15 : -2147483648 0 100 -> "aは3未満"
+No.16 : -2147483649 4294967295 1 -> Undefined Action
+No.17 : 2147483648 0 4294967296 -> Undefined Action
+No.18 : 2147483648 -1 100 -> Undefined Action
+No.19 : 3 -1 99 -> Undefined Action
+No.20 : 2 4294967295 0 -> Undefined Action
+No.21 : -2147483649 0 99 -> Undefined Action
+No.22 : 2147483647 1 1 -> "aは3以上かつbは1以上かつcは100未満"
+No.23 : 2147483647 4294967295 100 -> Undefined Action
+No.24 : 2147483648 1 4294967295 -> Undefined Action
+No.25 : -2147483648 1 0 -> Undefined Action
+No.26 : -2147483649 -1 4294967295 -> Undefined Action
+No.27 : 2147483648 4294967294 0 -> Undefined Action
+No.28 : 3 -1 0 -> Undefined Action
+No.29 : -2147483649 0 0 -> Undefined Action
+No.30 : 3 4294967295 4294967295 -> Undefined Action
+No.31 : 2147483648 4294967294 1 -> Undefined Action
+No.32 : 2147483647 4294967294 4294967295 -> "aは3以上かつbは1以上かつcは100以上"
+No.33 : 2 -1 1 -> Undefined Action
+No.34 : 2147483647 0 99 -> "aは3以上かつbは1未満"
+No.35 : 2 4294967294 100 -> "aは3未満"
+No.36 : 3 4294967294 100 -> "aは3以上かつbは1以上かつcは100以上"
+

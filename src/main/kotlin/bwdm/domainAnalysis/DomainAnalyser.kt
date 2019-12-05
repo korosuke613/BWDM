@@ -13,10 +13,10 @@ import java.util.*
 import kotlin.collections.ArrayList
 
 class DomainAnalyser(private val ie: InformationExtractor){
-    val domains: ArrayList<DomainPoints> = ArrayList()
-    val inputDataList: ArrayList<HashMap<String, Long>> = ArrayList()
-    val expectedOutputDataGenerator: ExpectedOutputDataGenerator
-    var expectedCount = 0
+    private val domains: ArrayList<DomainPoints> = ArrayList()
+    private val inputDataList: ArrayList<HashMap<String, Long>> = ArrayList()
+    private val expectedOutputDataGenerator: ExpectedOutputDataGenerator
+    private var expectedCount = 0
 
     private val ctx: Context = Context()
 
@@ -39,16 +39,16 @@ class DomainAnalyser(private val ie: InformationExtractor){
 
     private fun createInputDataList(){
         for(dp in domains){
-            for((k, p) in dp.onPoints.toSortedMap()){
+            for((_, p) in dp.onPoints.toSortedMap()){
                 inputDataList.add(p.inputData)
             }
-            for((k, p) in dp.offPoints.toSortedMap()){
+            for((_, p) in dp.offPoints.toSortedMap()){
                 inputDataList.add(p.inputData)
             }
-            for((k, p) in dp.inPoints.toSortedMap()){
+            for((_, p) in dp.inPoints.toSortedMap()){
                 inputDataList.add(p.inputData)
             }
-            for((k, p) in dp.outPoints.toSortedMap()){
+            for((_, p) in dp.outPoints.toSortedMap()){
                 inputDataList.add(p.inputData)
             }
         }
@@ -72,7 +72,7 @@ class DomainAnalyser(private val ie: InformationExtractor){
     private fun addResultBuf(buf: StringBuilder, points: HashMap<String, Point>, title: String){
         var i = 0
         buf.append("-- $title\n")
-        for ((k, p) in points.toSortedMap()) {
+        for ((_, p) in points.toSortedMap()) {
             buf.append("No.").append(i + 1).append(" : ")
             for (prm in ie.parameters) {
                 buf.append(p.factors[prm]).append(" ")
@@ -84,9 +84,9 @@ class DomainAnalyser(private val ie: InformationExtractor){
     }
 
     private fun generateOffPoints(dp: DomainPoints) {
-        for ((k, p) in dp.onPoints) {
+        for ((_, p) in dp.onPoints) {
             if(Util.getOperator(p.type) == "+"){
-                for((k_, f) in p.factors) {
+                for((k_, _) in p.factors) {
                     copyOffPoint(dp, p, k_, 1)
                     copyOffPoint(dp, p, k_, -1)
                 }
@@ -113,9 +113,9 @@ class DomainAnalyser(private val ie: InformationExtractor){
 
     private fun removeSameParameter(ic: ArrayList<String>, parsedCondition: HashMap<String, String>): Int? {
         for((i, _ic) in ic.withIndex()){
-            val _parsedCondition = ExpectedOutputDataGenerator.makeParsedCondition(_ic)
-            if(parsedCondition["left"] == _parsedCondition["left"]
-                    && parsedCondition["right"] != _parsedCondition["right"]){
+            val parsedConditionLocal = ExpectedOutputDataGenerator.makeParsedCondition(_ic)
+            if(parsedCondition["left"] == parsedConditionLocal["left"]
+                    && parsedCondition["right"] != parsedConditionLocal["right"]){
                 return i
             }
         }
@@ -132,7 +132,7 @@ class DomainAnalyser(private val ie: InformationExtractor){
                 val parsedCondition = ExpectedOutputDataGenerator.makeParsedCondition(ic[i])
                 ic[i] = parsedCondition["left"] + "=" + parsedCondition["right"]
 
-                var op = 0
+                var op: Int
                 if(b[i]) {
                     op = when(parsedCondition["operator"]){
                         ">"-> 1
@@ -211,7 +211,6 @@ class DomainAnalyser(private val ie: InformationExtractor){
                         parsedCondition["right"]!!,
                         operator!!,
                         parsedCondition["left"]!!,
-                        bool,
                         alith,
                         eqAlith)
             } else {
@@ -219,7 +218,6 @@ class DomainAnalyser(private val ie: InformationExtractor){
                         parsedCondition["right"]!!,
                         operator!!,
                         parsedCondition["left"]!!,
-                        bool,
                         alith,
                         eqAlith)
 
@@ -236,11 +234,11 @@ class DomainAnalyser(private val ie: InformationExtractor){
 
         for (i in ie.parameters.indices) {
             if (ie.argumentTypes[i] != "int") { //int型なら0以上の制限はいらない
-                val _expr =  makeInequalityExpr("0", ">", ie.parameters[i], true)
-                if(expr == null){
-                    expr = _expr
+                val exprLocal =  makeInequalityExpr("0", ">", ie.parameters[i])
+                expr = if(expr == null){
+                    exprLocal
                 }else {
-                    expr = ctx.mkAnd(expr, _expr)
+                    ctx.mkAnd(expr, exprLocal)
                 }
             }
         }
@@ -262,7 +260,7 @@ class DomainAnalyser(private val ie: InformationExtractor){
         return null
     }
 
-    private fun makePlusExpr(_right: String, operator: String, _left: String, bool: Boolean, alith: Int=0, eqAlith: Int=0): BoolExpr? {
+    private fun makePlusExpr(_right: String, operator: String, _left: String, alith: Int=0, eqAlith: Int=0): BoolExpr? {
         val str = _left.split("+")
         val left = ctx.mkIntConst(str[0])
         val right = ctx.mkIntConst(str[1])
@@ -280,7 +278,7 @@ class DomainAnalyser(private val ie: InformationExtractor){
         }
     }
 
-    private fun makeInequalityExpr(_right: String, operator: String, _left: String, bool: Boolean, alith: Int=0, eqAlith: Int=0): BoolExpr? {
+    private fun makeInequalityExpr(_right: String, operator: String, _left: String, alith: Int=0, eqAlith: Int=0): BoolExpr? {
         val right = java.lang.Long.valueOf(_right)
         return when (operator) {
             "<" -> ctx.mkLt(ctx.mkIntConst(_left), ctx.mkInt(right - alith))

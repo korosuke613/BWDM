@@ -1,0 +1,19 @@
+class aaa
+
+functions
+
+static public 団体割引 : int * int -> seq of char
+  団体割引関数(male, female) ==
+    if (male + female <= 50) then
+      if(male >= 5) then
+        if(female >= 6) then
+          "適用する"
+        else
+          "適用しない"
+      else
+        "適用しない"
+    else
+      "適用しない";
+
+end aaa
+

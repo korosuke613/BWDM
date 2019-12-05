@@ -1,0 +1,54 @@
+ファイルパス : /Users/Futa/Library/Mobile Documents/com~apple~CloudDocs/Program/IdeaProjects/BWDM/vdm_files/mix.vdmpp
+関数名 : mix
+引数の型 : arg1:nat arg2:int 
+戻り値の型 : seq of (char)
+生成テストケース数 : 46件(境界値分析:42/記号実行:4)
+
+各引数の境界値
+arg1 : 4294967295 4294967294 0 -1 1 2 3 
+arg2 : 2147483648 2147483647 -2147483648 -2147483649 0 -1 
+
+境界値分析によるテストケース（ペアワイズ法適用）
+No.1 : 4294967295 2147483648 -> Undefined Action
+No.2 : 4294967295 0 -> Undefined Action
+No.3 : 0 -2147483648 -> "arg1:even、arg2:negative"
+No.4 : 1 -2147483648 -> "arg1:odd、arg2:negative"
+No.5 : 4294967294 -2147483649 -> Undefined Action
+No.6 : -1 -1 -> Undefined Action
+No.7 : 1 2147483647 -> "arg1:odd、arg2:positive"
+No.8 : -1 2147483648 -> Undefined Action
+No.9 : 4294967294 0 -> "arg1:even、arg2:positive"
+No.10 : 1 -2147483649 -> Undefined Action
+No.11 : 2 -2147483648 -> "arg1:even、arg2:negative"
+No.12 : 3 2147483647 -> "arg1:odd、arg2:positive"
+No.13 : 0 -1 -> "arg1:even、arg2:negative"
+No.14 : 2 2147483648 -> Undefined Action
+No.15 : 0 0 -> "arg1:even、arg2:positive"
+No.16 : 2 -2147483649 -> Undefined Action
+No.17 : 4294967295 -2147483649 -> Undefined Action
+No.18 : 4294967294 2147483647 -> "arg1:even、arg2:positive"
+No.19 : 4294967294 2147483648 -> Undefined Action
+No.20 : 3 -2147483648 -> "arg1:odd、arg2:negative"
+No.21 : 2 2147483647 -> "arg1:even、arg2:positive"
+No.22 : 0 2147483647 -> "arg1:even、arg2:positive"
+No.23 : 4294967295 2147483647 -> Undefined Action
+No.24 : -1 -2147483649 -> Undefined Action
+No.25 : -1 2147483647 -> Undefined Action
+No.26 : 2 0 -> "arg1:even、arg2:positive"
+No.27 : 3 2147483648 -> Undefined Action
+No.28 : -1 0 -> Undefined Action
+No.29 : 4294967295 -1 -> Undefined Action
+No.30 : 2 -1 -> "arg1:even、arg2:negative"
+No.31 : -1 -2147483648 -> Undefined Action
+No.32 : 3 -2147483649 -> Undefined Action
+No.33 : 0 -2147483649 -> Undefined Action
+No.34 : 1 2147483648 -> Undefined Action
+No.35 : 4294967294 -2147483648 -> "arg1:even、arg2:negative"
+No.36 : 1 -1 -> "arg1:odd、arg2:negative"
+No.37 : 4294967295 -2147483648 -> Undefined Action
+No.38 : 1 0 -> "arg1:odd、arg2:positive"
+No.39 : 0 2147483648 -> Undefined Action
+No.40 : 4294967294 -1 -> "arg1:even、arg2:negative"
+No.41 : 3 0 -> "arg1:odd、arg2:positive"
+No.42 : 3 -1 -> "arg1:odd、arg2:negative"
+

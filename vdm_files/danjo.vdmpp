@@ -2,11 +2,11 @@ class Danjo
 
 functions
 
-static public 映画チケット分類関数 : int * int -> seq of char
-  映画チケット分類関数(age_of_male, age_of_female) ==
+static public 映画チケット分類関数 : int * int * int-> seq of char
+  映画チケット分類関数(age_of_male, age_of_female, ggg) ==
     if (age_of_male + age_of_female <= 50) then
       if(age_of_male >= 18) then
-        if(age_of_female >= 16) then
+        if(ggg >= 16) then
           "映画チケットは割引価格となる"
         else
           "映画チケットは割引価格とならない。なぜなら、女性が16歳未満だから"
