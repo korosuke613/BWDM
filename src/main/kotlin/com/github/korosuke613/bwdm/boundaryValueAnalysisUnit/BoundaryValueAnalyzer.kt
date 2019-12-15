@@ -165,7 +165,7 @@ class BoundaryValueAnalyzer
             )
         }
 
-        // ファクターの追加
+        // ファクターの追�
         for (prm in parameters) {
             val bvs = boundaryValueList[prm]
             val factor = Factor(named_level = bvs!!.map { it.toString() }, name = prm)

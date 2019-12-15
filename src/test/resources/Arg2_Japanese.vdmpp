@@ -24,4 +24,3 @@ SampleFunction : int*nat*nat1 -> seq of char
 	     else
 	       "cは4よりでかくない";
 end Sample
-
