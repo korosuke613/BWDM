@@ -154,25 +154,25 @@ class BoundaryValueAnalyzer
     private fun makeInputDataListWithPairwise() {
         val pict = Pict()
         val model = Model()
-        // 因子の取得
+        // 蝗蟄舌�蜿門ｾ
         val parameters = functionDefinition.parameters
 
-        // 引数の数が2個以下の場合、ペアワイズ法が適用できないので、
-        // 例外を出す
+        // 蠑墓焚縺ｮ謨ｰ縺2蛟倶ｻ･荳九�蝣ｴ蜷医√�繧｢繝ｯ繧､繧ｺ豕輔′驕ｩ逕ｨ縺ｧ縺阪↑縺��縺ｧ縲
+        // 萓句､悶ｒ蜃ｺ縺
         if (parameters.size <= 2) {
             throw IllegalArgumentException(
-                    "関数${functionDefinition.functionName}が受け取る引数の数が少ないのでペアワイズ法は適用できません。"
+                    "髢｢謨ｰ${functionDefinition.functionName}縺悟女縺大叙繧句ｼ墓焚縺ｮ謨ｰ縺悟ｰ代↑縺��縺ｧ繝壹い繝ｯ繧､繧ｺ豕輔�驕ｩ逕ｨ縺ｧ縺阪∪縺帙ｓ縲"
             )
         }
 
-        // ファクターの追�
+        // ファクターの追加
         for (prm in parameters) {
             val bvs = boundaryValueList[prm]
             val factor = Factor(named_level = bvs!!.map { it.toString() }, name = prm)
             model.addFactor(factor)
         }
 
-        // ペアワイズ分析した結果を生成
+        // 繝壹い繝ｯ繧､繧ｺ蛻�梵縺励◆邨先棡繧堤函謌
         pict.setRootModel(model)
         val tests = pict.generate()
 
@@ -188,7 +188,7 @@ class BoundaryValueAnalyzer
     private fun makeInputDataList() {
         val parameters = functionDefinition.parameters
 
-        // 最初の一つ目
+        // 譛蛻昴�荳縺､逶ｮ
         val firstPrm = parameters[0]
         val firstBvs = boundaryValueList[firstPrm]
         for (i in firstBvs!!.indices) {
@@ -197,18 +197,18 @@ class BoundaryValueAnalyzer
             hm[firstPrm] = firstBvs[i]
         }
 
-        // それ以降
+        // 縺昴ｌ莉･髯
         parameters.forEach { p ->
-            if (p != firstPrm) { // 最初の要素以外に対して
+            if (p != firstPrm) { // 譛蛻昴�隕∫ｴ莉･螟悶↓蟇ｾ縺励※
                 val currentBvs = boundaryValueList[p]
 
-                // inputDataListの第一引数のみを登録した状態
+                // inputDataList縺ｮ隨ｬ荳蠑墓焚縺ｮ縺ｿ繧堤匳骭ｲ縺励◆迥ｶ諷
                 val inputDataListInitialState = ArrayList(inputDataList)
 
                 for (i in 0 until currentBvs!!.size - 1) {
                     val inputDataListTmp = ArrayList<HashMap<String, Long>>()
                     inputDataListInitialState.forEach { inputDataOriginal ->
-                        //inputDataを複製
+                        //inputData繧定､�｣ｽ
                         val inputData = HashMap<String, Long>()
                         inputDataOriginal.forEach { (key, value) -> inputData[key] = value }
                         inputDataListTmp.add(inputData)
